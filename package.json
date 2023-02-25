@@ -1,0 +1,58 @@
+{
+  "name": "composed-offset-position",
+  "version": "0.0.0",
+  "description": "This provides a set of ponyfills to achieve the same behavior of `offsetParent`, `offsetLeft` and `offsetTop` before the `offsetParent` spec was changed.",
+  "main": "index.js",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": {
+        "browser": {
+          "development": "./dist/index.browser.mjs",
+          "default": "./dist/index.browser.min.mjs"
+        },
+        "default": "./dist/index.mjs"
+      },
+      "module": "./dist/index.esm.js",
+      "default": "./dist/index.umd.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "xo --fix --prettier --space",
+    "release": "release-it",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcfranco/composed-offset-position.git"
+  },
+  "author": "jcfranco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcfranco/composed-offset-position/issues"
+  },
+  "homepage": "https://github.com/jcfranco/composed-offset-position#readme",
+  "devDependencies": {
+    "@rollup/plugin-terser": "~0.4.0",
+    "@rollup/plugin-typescript": "~11.0.0",
+    "husky": "~8.0.3",
+    "lint-staged": "~13.1.2",
+    "markdownlint-cli": "~0.33.0",
+    "prettier": "~2.8.4",
+    "release-it": "~15.6.0",
+    "rollup": "~3.17.2",
+    "tslib": "~2.5.0",
+    "typescript": "~4.9.5",
+    "xo": "~0.53.1"
+  }
+}
