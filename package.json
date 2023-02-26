@@ -36,6 +36,15 @@
     "type": "git",
     "url": "git+https://github.com/jcfranco/composed-offset-position.git"
   },
+  "keywords": [
+    "composed",
+    "offsetLeft",
+    "offsetParent",
+    "offsetTop",
+    "ponyfill",
+    "shadow DOM",
+    "utils"
+  ],
   "author": "jcfranco",
   "license": "MIT",
   "bugs": {
