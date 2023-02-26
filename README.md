@@ -4,4 +4,4 @@ This provides a set of ponyfills to achieve the same behavior of `offsetParent`,
 
 ## Notes
 
-- Based on [https://github.com/josepharhar/offsetparent-polyfills/]
+- Based on <https://github.com/josepharhar/offsetparent-polyfills/> (many thanks to @josepharhar)
