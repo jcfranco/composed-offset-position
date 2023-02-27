@@ -2,21 +2,23 @@
   "name": "composed-offset-position",
   "version": "0.0.3",
   "description": "This provides a set of ponyfills to achieve the same behavior of `offsetParent`, `offsetLeft` and `offsetTop` before the `offsetParent` spec was changed.",
-  "main": "index.js",
   "type": "module",
+  "main": "./dist/composed-offset-position.umd.js",
+  "module": "./dist/composed-offset-position.esm.js",
+  "unpkg": "./dist/composed-offset-position.umd.min.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": {
         "browser": {
-          "development": "./dist/index.browser.mjs",
-          "default": "./dist/index.browser.min.mjs"
+          "development": "./dist/composed-offset-position.browser.mjs",
+          "default": "./dist/composed-offset-position.browser.min.mjs"
         },
-        "default": "./dist/index.mjs"
+        "default": "./dist/composed-offset-position.mjs"
       },
-      "module": "./dist/index.esm.js",
-      "default": "./dist/index.umd.js"
+      "module": "./dist/composed-offset-position.esm.js",
+      "default": "./dist/composed-offset-position.umd.js"
     },
     "./package.json": "./package.json"
   },
