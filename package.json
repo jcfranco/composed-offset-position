@@ -6,7 +6,7 @@
   "main": "./dist/composed-offset-position.umd.js",
   "module": "./dist/composed-offset-position.esm.js",
   "unpkg": "./dist/composed-offset-position.umd.min.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
