@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/ban-types */
+import { isContainingBlock } from "@floating-ui/utils/dom";
 
 export function offsetParent(element: HTMLElement): HTMLElement | null {
   return offsetParentPolyfill(element);
@@ -68,7 +68,7 @@ function offsetParentPolyfill(element: HTMLElement): HTMLElement | null {
       continue;
     }
 
-    if (style.position !== 'static' || style.filter !== 'none') {
+    if (style.position !== 'static' || isContainingBlock(ancestor)) {
       return ancestor;
     }
 

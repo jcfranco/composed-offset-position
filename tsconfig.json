@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "ESNext",
-    "outDir": "./dist",
-    "esModuleInterop": true,
     "declaration": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "nodenext",
+    "outDir": "./dist",
+    "skipLibCheck": true,
     "strict": true,
-    "skipLibCheck": true
+    "target": "ES6",
   }
 }

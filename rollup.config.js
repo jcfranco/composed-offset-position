@@ -38,6 +38,9 @@ const bundles = [
       file: 'dist/composed-offset-position.umd.js',
       format: 'umd',
       name: umdName,
+      globals: {
+        '@floating-ui/utils/dom': 'FloatingUIUtilsDOM',
+      },
     },
   },
   {
@@ -46,12 +49,21 @@ const bundles = [
       file: 'dist/composed-offset-position.umd.min.js',
       format: 'umd',
       name: umdName,
+      globals: {
+        '@floating-ui/utils/dom': 'FloatingUIUtilsDOM',
+      },
     },
   },
 ];
 
 export default bundles.map(({input, output}) => ({
+  external: [
+    "@floating-ui/utils/dom"
+  ],
   input,
   output,
-  plugins: [typescript(), output.file.includes('.min.') && terser()],
+  plugins: [
+    typescript(),
+    output.file.includes('.min.') && terser()
+  ],
 }));
