@@ -1,4 +1,4 @@
-import { isContainingBlock } from "@floating-ui/utils/dom";
+import {isContainingBlock} from '@floating-ui/utils/dom';
 
 export function offsetParent(element: HTMLElement): HTMLElement | null {
   return offsetParentPolyfill(element);
@@ -63,7 +63,7 @@ function offsetParentPolyfill(element: HTMLElement): HTMLElement | null {
     }
 
     const style = getComputedStyle(ancestor);
-    // Display:contents nodes aren't in the layout tree so they should be skipped.
+    // Display:contents nodes aren't in the layout tree, so they should be skipped.
     if (style.display === 'contents') {
       continue;
     }
