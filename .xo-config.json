@@ -1,0 +1,7 @@
+{
+  "prettier": true,
+  "space": true,
+  "rules": {
+    "n/file-extension-in-import": "off"
+  }
+}

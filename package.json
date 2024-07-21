@@ -31,7 +31,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && rollup -c",
-    "lint": "xo --fix --prettier --space",
+    "lint": "xo --fix",
     "release": "release-it",
     "prepare": "husky install"
   },
