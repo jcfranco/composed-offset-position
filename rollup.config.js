@@ -2,7 +2,7 @@ import typescript from '@rollup/plugin-typescript';
 import terser from '@rollup/plugin-terser';
 
 const input = 'src/index.ts';
-const umdName = 'composed-offset-position';
+const umdName = 'ComposedOffsetPosition';
 const bundles = [
   {
     input,
@@ -57,13 +57,8 @@ const bundles = [
 ];
 
 export default bundles.map(({input, output}) => ({
-  external: [
-    "@floating-ui/utils/dom"
-  ],
+  external: ['@floating-ui/utils/dom'],
   input,
   output,
-  plugins: [
-    typescript(),
-    output.file.includes('.min.') && terser()
-  ],
+  plugins: [typescript(), output.file.includes('.min.') && terser()],
 }));
