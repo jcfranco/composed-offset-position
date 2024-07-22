@@ -1,6 +1,6 @@
 {
   "name": "composed-offset-position",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "This provides a set of ponyfills to achieve the same behavior of `offsetParent`, `offsetLeft` and `offsetTop` before the `offsetParent` spec was changed.",
   "type": "module",
   "main": "./dist/composed-offset-position.umd.js",
