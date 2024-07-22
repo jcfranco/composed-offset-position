@@ -82,6 +82,6 @@
     "xo": "~0.53.1"
   },
   "peerDependencies": {
-    "@floating-ui/utils": "^0.2.4"
+    "@floating-ui/utils": "^0.2.5"
   }
 }

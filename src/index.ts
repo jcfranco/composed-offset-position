@@ -68,7 +68,7 @@ function offsetParentPolyfill(element: HTMLElement): HTMLElement | null {
       continue;
     }
 
-    if (style.position !== 'static' || isContainingBlock(ancestor)) {
+    if (style.position !== 'static' || isContainingBlock(style)) {
       return ancestor;
     }
 
