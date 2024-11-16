@@ -69,7 +69,7 @@
     "jest-puppeteer": "^10.0.1",
     "lint-staged": "~15.2.10",
     "markdownlint-cli": "~0.33.0",
-    "prettier": "~2.8.4",
+    "prettier": "~3.3.3",
     "puppeteer": "^23.7.1",
     "release-it": "~15.6.0",
     "rimraf": "^6.0.1",
