@@ -60,7 +60,7 @@
   "homepage": "https://github.com/jcfranco/composed-offset-position#readme",
   "devDependencies": {
     "@rollup/plugin-terser": "~0.4.0",
-    "@rollup/plugin-typescript": "~11.0.0",
+    "@rollup/plugin-typescript": "~12.1.2",
     "@types/jest": "^29.5.12",
     "concurrently": "^8.2.2",
     "husky": "~9.1.7",
