@@ -71,7 +71,7 @@
     "markdownlint-cli": "~0.43.0",
     "prettier": "~3.4.2",
     "puppeteer": "^23.7.1",
-    "release-it": "~15.6.0",
+    "release-it": "~18.1.1",
     "rimraf": "^6.0.1",
     "rollup": "~3.17.2",
     "ts-jest": "^29.2.2",
